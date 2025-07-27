@@ -13,15 +13,15 @@ public class Main {
      */
     public static void main(String[] args) {
 
-        Food meat = new Meat(5, 100.00,false);
-        Food redApple = new Apple(10, 50.00, true,Colour.RED_COLOUR);
-        Food greenApple = new Apple(8, 60.00,true, Colour.GREEN_COLOUR);
+        Food meat = new Meat(5, 100.00, false);
+        Food redApple = new Apple(10, 50.00, true, Colour.RED_COLOUR);
+        Food greenApple = new Apple(8, 60.00, true, Colour.GREEN_COLOUR);
         Food[] meal = {meat, redApple, greenApple};
         // Спасибо большое за ревью :3
         ShoppingCart shoppingCart = new ShoppingCart(meal);
-        System.out.println("Стоимость корзины без скидки = "+shoppingCart.getTotalAmountWithoutDiscount(shoppingCart)+"\u20BD");
-        System.out.println("Стоимость корзины с скидкой = "+shoppingCart.getTotalAmountWithDiscount(shoppingCart)+"\u20BD");
-        System.out.println("Стоимость корзины вегетерианской без скидки = "+shoppingCart.getVegetarianTotalAmountWithoutDiscount(shoppingCart)+"\u20BD");
+        System.out.println("Стоимость корзины без скидки = " + shoppingCart.getTotalAmountWithoutDiscount() + "\u20BD");
+        System.out.println("Стоимость корзины с скидкой = " + shoppingCart.getTotalAmountWithDiscount() + "\u20BD");
+        System.out.println("Стоимость корзины вегетерианской без скидки = " + shoppingCart.getVegetarianTotalAmountWithoutDiscount() + "\u20BD");
 
     }
 }

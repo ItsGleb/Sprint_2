@@ -16,7 +16,7 @@ public class ShoppingCart {
     }
 
     // Получить общую сумму товаров в корзине без скидки
-    public static int getTotalAmountWithoutDiscount(ShoppingCart shoppingCart) {
+    public static int getTotalAmountWithoutDiscount() {
         int total = 0;
         for (int i = 0; i < meal.length; i++) {
             total += (int) ((meal[i].getAmount() * meal[i].getPrice()));
@@ -25,7 +25,7 @@ public class ShoppingCart {
     }
 
     // Получить общую сумму товаров в корзине со скидкой
-    public int getTotalAmountWithDiscount(ShoppingCart shoppingCart) {
+    public int getTotalAmountWithDiscount() {
         int total = 0;
         int priceWithDiscount;
         for (int i = 0; i < meal.length; i++) {
@@ -36,7 +36,7 @@ public class ShoppingCart {
     }
 
     // Получить общую сумму всех вегетарианских продуктов в корзине без скидки.
-    public int getVegetarianTotalAmountWithoutDiscount(ShoppingCart shoppingCart) {
+    public int getVegetarianTotalAmountWithoutDiscount() {
         int total = 0;
         for (int i = 0; i < meal.length; i++) {
             if (meal[i].isVegetarian()) {
