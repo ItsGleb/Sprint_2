@@ -1,6 +1,6 @@
 package ru.yandex.practicum.model.constants;
 
 public class Colour {
-    public static final String redColour = "red";
-    public static final String greenColour = "green";
+    public static final String RED_COLOUR = "red";
+    public static final String GREEN_COLOUR = "green";
 }

@@ -10,17 +10,14 @@ public class Main {
     - Мясо в количестве 5 кг по цене 100 рублей за кг;
     - Яблоки красные в количестве 10 кг по цене 50 рублей;
     - Яблоки зелёные в количестве 8 кг по цене 60 рублей.
-    Стоимость корзины без скидки = 5*100 + 10*50 + 8*60 = 1480
-    Стоимость корзины с скидкой = 5*100 + 10*(50*0.6) + 8*60 = 1280
-    Стоимость корзины вегетерианской = 10*(50*0.6) + 8*60 = 780
      */
     public static void main(String[] args) {
-        //System.out.println(Colour.greenColour);
+
         Food meat = new Meat(5, 100.00);
-        Food redApple = new Apple(10, 50.00, Colour.redColour);
-        Food greenApple = new Apple(8, 60.00, Colour.greenColour);
+        Food redApple = new Apple(10, 50.00, Colour.RED_COLOUR);
+        Food greenApple = new Apple(8, 60.00, Colour.GREEN_COLOUR);
         Food[] meal = {meat, redApple, greenApple};
-        //System.out.println(redApple.getDiscount());
+
         ShoppingCart shoppingCart = new ShoppingCart(meal);
         //Стоимость корзины без скидки = 5*100 + 10*50 + 8*60 = 1480
         System.out.println(shoppingCart.getTotalAmountWithoutDiscount(shoppingCart));

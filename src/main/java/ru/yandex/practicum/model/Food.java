@@ -1,5 +1,7 @@
 package ru.yandex.practicum.model;
 
+import ru.yandex.practicum.model.constants.Discount;
+
 public abstract class Food implements Discountable{
     protected int amount; // 1 кг
     protected double price; // кол-во рублей за 1 кг
@@ -20,6 +22,6 @@ public abstract class Food implements Discountable{
     }
     @Override
     public double getDiscount(){
-        return 0.0;
+        return Discount.DEFAULT_DISCOUNT;
     }
 }
