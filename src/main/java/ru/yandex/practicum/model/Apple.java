@@ -6,15 +6,14 @@ import ru.yandex.practicum.model.constants.Discount;
 public class Apple extends Food {
     protected String color;
 
-    public Apple(int amount, double price, String color) {
-        this.amount = amount;
-        this.price = price;
+    public Apple(int amount, double price, boolean isVegetarian, String color) {
+        super(amount, price, isVegetarian);
         this.color = color;
-        this.isVegetarian = true;
     }
+
     @Override
-    public double getDiscount(){
-        if(color.equals(Colour.RED_COLOUR)){
+    public double getDiscount() {
+        if (color.equals(Colour.RED_COLOUR)) {
             return Discount.RED_APPLE_DISCOUNT;
         } else return Discount.DEFAULT_DISCOUNT;
     }

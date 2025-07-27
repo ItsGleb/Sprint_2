@@ -13,9 +13,9 @@ public class Main {
      */
     public static void main(String[] args) {
 
-        Food meat = new Meat(5, 100.00);
-        Food redApple = new Apple(10, 50.00, Colour.RED_COLOUR);
-        Food greenApple = new Apple(8, 60.00, Colour.GREEN_COLOUR);
+        Food meat = new Meat(5, 100.00,false);
+        Food redApple = new Apple(10, 50.00, true,Colour.RED_COLOUR);
+        Food greenApple = new Apple(8, 60.00,true, Colour.GREEN_COLOUR);
         Food[] meal = {meat, redApple, greenApple};
 
         ShoppingCart shoppingCart = new ShoppingCart(meal);
