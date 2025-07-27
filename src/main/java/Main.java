@@ -17,14 +17,11 @@ public class Main {
         Food redApple = new Apple(10, 50.00, true,Colour.RED_COLOUR);
         Food greenApple = new Apple(8, 60.00,true, Colour.GREEN_COLOUR);
         Food[] meal = {meat, redApple, greenApple};
-
+        // Спасибо большое за ревью :3
         ShoppingCart shoppingCart = new ShoppingCart(meal);
-        //Стоимость корзины без скидки = 5*100 + 10*50 + 8*60 = 1480
-        System.out.println(shoppingCart.getTotalAmountWithoutDiscount(shoppingCart));
-        //Стоимость корзины с скидкой = 5*100 + 10*(50*0.6) + 8*60 = 1180
-        System.out.println(shoppingCart.getTotalAmountWithDiscount(shoppingCart));
-        //Стоимость корзины вегетерианской = 10*50 + 8*60 = 980
-        System.out.println(shoppingCart.getVegetarianTotalAmountWithoutDiscount(shoppingCart));
+        System.out.println("Стоимость корзины без скидки = "+shoppingCart.getTotalAmountWithoutDiscount(shoppingCart)+"\u20BD");
+        System.out.println("Стоимость корзины с скидкой = "+shoppingCart.getTotalAmountWithDiscount(shoppingCart)+"\u20BD");
+        System.out.println("Стоимость корзины вегетерианской без скидки = "+shoppingCart.getVegetarianTotalAmountWithoutDiscount(shoppingCart)+"\u20BD");
 
     }
 }
