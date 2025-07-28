@@ -16,7 +16,7 @@ public class ShoppingCart {
     }
 
     // Получить общую сумму товаров в корзине без скидки
-    public static int getTotalAmountWithoutDiscount() {
+    public  int getTotalAmountWithoutDiscount() {
         int total = 0;
         for (int i = 0; i < meal.length; i++) {
             total += (int) ((meal[i].getAmount() * meal[i].getPrice()));
